@@ -4,7 +4,7 @@ from repair.search import Search
 
 
 def main(depth):
-    # 可封装为命令行工具 参数为script_path, save_path
+    # 可封装为命令行工具 参数为script_path, save_path, depth
     script_path = '../scripts/example1.py'
     # 最好把存储路径设置为当前工作目录下的某个文件夹中
 
@@ -26,7 +26,7 @@ def main(depth):
         search_obj.get_target_script()
 
 
-# 建议参数选择1 如果选2的话 再往后看一步 需要遍历到第三个层次 时间很长
+# 建议参数depth选择1 如果选2的话 再往后看一步 需要遍历到第三个层次 时间很长
 """
 参数的含义：假设源测试脚本路径长度为4，页面转移序列为
 s1->s2->s3->s4
